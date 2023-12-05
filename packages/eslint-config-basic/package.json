@@ -1,0 +1,39 @@
+{
+  "name": "@red-explosion/eslint-config-basic",
+  "version": "0.0.0",
+  "description": "Red Explosion's basic ESLint config rules",
+  "keywords": [
+    "eslint-config",
+    "eslint",
+    "red-explosion"
+  ],
+  "homepage": "https://github.com/red-explosion/common-js/tree/main/packages/eslint-config-basic",
+  "license": "MIT",
+  "author": {
+    "name": "Ben Sherred",
+    "email": "ben@sherred.co.uk"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --clean --dts",
+    "test": "tsc --noEmit"
+  },
+  "dependencies": {
+    "eslint-plugin-i": "^2.29.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2"
+  }
+}

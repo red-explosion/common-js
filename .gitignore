@@ -1,0 +1,13 @@
+# exclude OS files
+.DS_Store
+
+# exclude IDE files
+/.fleet
+/.idea
+/.vscode
+
+# Package managers
+/node_modules
+
+## Build output
+/packages/**/dist

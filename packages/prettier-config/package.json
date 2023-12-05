@@ -1,6 +1,6 @@
 {
   "name": "@red-explosion/prettier-config",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Red Explosion's Prettier config rules",
   "keywords": [
     "prettier-config",

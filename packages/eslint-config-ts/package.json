@@ -1,6 +1,6 @@
 {
   "name": "@red-explosion/eslint-config-ts",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Red Explosion's TypeScript ESLint config rules",
   "keywords": [
     "eslint-config",

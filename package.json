@@ -1,6 +1,6 @@
 {
   "name": "@red-explosion/common",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "license": "MIT",
   "author": "ben Sherred <ben@sherred.co.uk>",
@@ -8,10 +8,10 @@
   "scripts": {
     "build": "pnpm -r run build",
     "lint": "pnpm dlx @biomejs/biome check --apply ./",
-    "test:lint": "pnpm dlx @biomejs/biome check ./",
     "make:package": "node --no-warnings=ExperimentalWarning scripts/make-package/index.js",
     "release": "pnpm sort-package-json && pnpm build && bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public",
-    "sort-package-json": "sort-package-json package.json packages/*/package.json"
+    "sort-package-json": "sort-package-json package.json packages/*/package.json",
+    "test:lint": "pnpm dlx @biomejs/biome check ./"
   },
   "devDependencies": {
     "@biomejs/biome": "1.4.1",

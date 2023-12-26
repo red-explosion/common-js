@@ -1,0 +1,31 @@
+{
+  "name": "Will autogenerate",
+  "version": "Will autogenerate",
+  "description": "This is where your description should go.",
+  "keywords": [
+    "red-explosion"
+  ],
+  "homepage": "Will autogenerate",
+  "license": "MIT",
+  "author": "ben Sherred <ben@sherred.co.uk>",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --clean --dts",
+    "test": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}

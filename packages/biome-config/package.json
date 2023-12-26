@@ -1,0 +1,13 @@
+{
+  "name": "@red-explosion/biome-config",
+  "version": "0.1.0",
+  "description": "Red Explosion's Biome config.",
+  "keywords": [
+    "red-explosion",
+    "biome",
+    "biome-config"
+  ],
+  "homepage": "https://github.com/red-explosion/common-js/tree/main/packages/biome-config",
+  "license": "MIT",
+  "author": "ben Sherred <ben@sherred.co.uk>"
+}

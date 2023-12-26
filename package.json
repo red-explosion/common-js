@@ -3,19 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
-  "author": {
-    "name": "Ben Sherred",
-    "email": "ben@sherred.co.uk"
-  },
+  "author": "ben Sherred <ben@sherred.co.uk>",
   "type": "module",
   "scripts": {
     "build": "pnpm -r run build",
-    "lint": "eslint .",
+    "lint": "pnpm dlx @biomejs/biome check --apply ./",
+    "test:lint": "pnpm dlx @biomejs/biome check ./",
     "make:package": "node --no-warnings=ExperimentalWarning scripts/make-package/index.js",
     "release": "pnpm sort-package-json && pnpm build && bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public",
     "sort-package-json": "sort-package-json package.json packages/*/package.json"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.4.1",
     "bumpp": "^9.2.0",
     "sort-package-json": "^2.6.0"
   }
